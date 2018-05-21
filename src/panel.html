@@ -45,7 +45,7 @@
             </div>
             <ul class="list-unstyled components">
                 <li class="active">
-                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">Data Sekolah</a>
+                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false"><em class="fa fa-institution"></em> Sekolah</a>
                     <ul class="collapse list-unstyled" id="homeSubmenu">
                         <li><a href="#">Home 1</a></li>
                         <li><a href="#">Home 2</a></li>
@@ -53,7 +53,7 @@
                     </ul>
                 </li>
                 <li>
-                    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false">Data Siswa</a>
+                    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false"><em class="fa fa-address-book-o"></em> Data Siswa</a>
                     <ul class="collapse list-unstyled" id="pageSubmenu">
                         <li><a href="#">Page 1</a></li>
                         <li><a href="#">Page 2</a></li>
@@ -61,7 +61,7 @@
                     </ul>
                 </li>
                 <li>
-                    <a href="#">Data Kelas</a>
+                    <a href="#"><em class="fa fa-group"></em> Kelas</a>
                 </li>
                 <li>
                     <a href="#"><em class="fa fa-money"></em> Keuangan Siswa</a>
@@ -85,11 +85,11 @@
                 </div>
             </nav>
         <div>
-        <div class="card-group">
-            <div class="card" style="background-color: rgba(131, 141, 141, 0.664)">
+        <div class="row">
+            <div class="col-md-6">
                 <!-- Modal tambah Siswa -->
                 <!-- Button trigger modal -->
-                <button type="button" class="btn btn-primary mt-3" data-toggle="modal" data-target="#exampleModal1">
+                <button type="button" class="btn btn-primary btn-block mt-3" data-toggle="modal" data-target="#exampleModal1">
                         Tambah Siswa <em class="fa fa-plus"></em>
                 </button>
                     
@@ -161,7 +161,7 @@
 
                 <p></p>
                 <!-- Modal Print -->
-                <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg"><em class="fa fa-print"></em> Cetak Laporan Keuangan</button>
+                <button type="button" class="btn btn-primary btn-block" data-toggle="modal" data-target=".bd-example-modal-lg"><em class="fa fa-print"></em> Cetak Laporan Keuangan</button>
                 <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
                     <div class="modal-dialog modal-lg">
                         <div class="modal-content">
@@ -179,11 +179,13 @@
                     </div>
                 </div>
             </div>
-            <div class="card" style="background-color: rgba(131, 141, 141, 0.664)">
+            <div class="col-md-6">
                 <div class="card">
                         <div class="input-group">
                             <input type="text" class="form-control" placeholder="Cari siswa" aria-label="Recipient's username" aria-describedby="basic-addon2">
-                            <span class="input-group-addon fa fa-search"></span>
+                            <button type="button" class="btn btn-info">
+                                <em class="fa fa-search"></em> Cari
+                            </button>
                         </div>
                 </div>
                 <!-- Button trigger modal -->
