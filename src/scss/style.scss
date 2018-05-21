@@ -7,11 +7,14 @@ body{
   height: 100%;
   position: fixed;
   background-size: cover;
-    background-repeat: no-repeat;
+  background-repeat: no-repeat;
   background-image: url("../img/background.jpg");
 }
 .whitecolor{
   color: rgb(255, 255, 255);
+}
+.newsbox{
+  background-color: rgba(242,242,242,0.2)
 }
 .box {
   width: 100%;
@@ -19,6 +22,6 @@ body{
   padding: 10px;
   max-width: 400px;
   border-radius: 2px;
-  /*box-shadow: $shadow2;*/
+  box-shadow: $shadow2;
   background-color: rgba(242,242,242,0.2);
 }
