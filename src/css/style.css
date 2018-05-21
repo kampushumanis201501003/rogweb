@@ -1,0 +1,22 @@
+html, body {
+  height: 100%; }
+
+body {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("../img/background.jpg"); }
+
+.whitecolor {
+  color: white; }
+
+.box {
+  width: 100%;
+  margin: auto;
+  padding: 10px;
+  max-width: 400px;
+  border-radius: 2px;
+  /*box-shadow: $shadow2;*/
+  background-color: rgba(242, 242, 242, 0.2); }
