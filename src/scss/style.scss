@@ -25,3 +25,9 @@ body{
   box-shadow: $shadow2;
   background-color: rgba(242,242,242,0.2);
 }
+.img-circle {
+  width: 150px;
+  height: 150px;
+  border: 4px solid #FFF;
+  border-radius: 30%;
+}
