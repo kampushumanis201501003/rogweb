@@ -10,88 +10,258 @@
     <title>STPM Santa Ursula | Panel</title>
 </head>
 <body class="bg-dark">
-        <div class="wrapper">
-            <!-- Sidebar Holder -->
-            <nav id="sidebar">
-                <div class="sidebar-header">
-                    <h3 style="text-align: center">
-                            <img src="img/logo.jpg" class="media-object img-circle" alt="STPM Santa Ursula" class="whitecolor">
-                            STPM Santa Ursula
-                    </h3>
+    <div class="wrapper">
+        <!-- Sidebar Holder -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <div class="card">
+                    <div class="card-header">
+                        <h5 style="text-align: center;color: black">
+                                <img src="img/logo.jpg" class="media-object" style="width:80px;border: 4px solid #FFF;border-radius: 30%;" alt="STPM Santa Ursula">
+                                <br>STPM Santa Ursula
+                        </h5>
+                    </div>
+                    <div class="card-body" style="color: black">
+                        <table>
+                            <tr>
+                                <td>Username</td>
+                                <td>:</td>
+                                <td>Budi</td>
+                            </tr>
+                            <tr>
+                                <td>Hak Akses</td>
+                                <td>:</td>
+                                <td>Moderator</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="card-footer" style="color: black">
+                        <center>
+                            Terakhir Akses <br>
+                            28 April 2018
+                        </center>
+                    </div>
                 </div>
-                <ul class="list-unstyled components">
-                    <p>Dummy Heading</p>
-                    <li class="active">
-                        <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">Data Sekolah</a>
-                        <ul class="collapse list-unstyled" id="homeSubmenu">
-                            <li><a href="#">Home 1</a></li>
-                            <li><a href="#">Home 2</a></li>
-                            <li><a href="#">Home 3</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#">About</a>
-                        <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false">Data Siswa</a>
-                        <ul class="collapse list-unstyled" id="pageSubmenu">
-                            <li><a href="#">Page 1</a></li>
-                            <li><a href="#">Page 2</a></li>
-                            <li><a href="#">Page 3</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#">Data Kelas</a>
-                    </li>
-                    <li>
-                        <a href="#">Keuangan Siswa</a>
-                    </li>
-                    <li>
-                        <a href="index.html"><em class="fa fa-power-off"></em> Logout</a>
-                    </li>
-                </ul>
+            </div>
+            <ul class="list-unstyled components">
+                <li class="active">
+                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">Data Sekolah</a>
+                    <ul class="collapse list-unstyled" id="homeSubmenu">
+                        <li><a href="#">Home 1</a></li>
+                        <li><a href="#">Home 2</a></li>
+                        <li><a href="#">Home 3</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false">Data Siswa</a>
+                    <ul class="collapse list-unstyled" id="pageSubmenu">
+                        <li><a href="#">Page 1</a></li>
+                        <li><a href="#">Page 2</a></li>
+                        <li><a href="#">Page 3</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Data Kelas</a>
+                </li>
+                <li>
+                    <a href="#"><em class="fa fa-money"></em> Keuangan Siswa</a>
+                </li>
+                <li>
+                    <a href="index.html"><em class="fa fa-power-off"></em> Logout</a>
+                </li>
+            </ul>
+        </nav>
+        <!-- Page Content Holder -->
+        <div class="container-fluid">
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                    <button type="button" id="sidebarCollapse" class="btn btn-info navbar-btn">
+                        <em class="fa fa-bars"></em>
+                    </button>
+                    <a class="navbar-brand" href="#">
+                        <img src="img/logo.jpg" alt="STPM Santa Ursula"  style="width:40px;border: 4px solid #FFF;border-radius: 30%;">
+                        STPM Santa Ursula
+                    </a>
+                </div>
             </nav>
-
-            <!-- Page Content Holder -->
-            <div id="content">
-
-                <nav class="navbar navbar-default">
-                    <div class="container-fluid">
-                        <div class="navbar-header">
-                            <button type="button" id="sidebarCollapse" class="btn btn-info navbar-btn">
-                                <em class="fa fa-bars"></em>
-                            </button>
+        <div>
+        <div class="card-group">
+            <div class="card" style="background-color: rgba(131, 141, 141, 0.664)">
+                <!-- Modal tambah Siswa -->
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary mt-3" data-toggle="modal" data-target="#exampleModal1">
+                        Tambah Siswa <em class="fa fa-plus"></em>
+                </button>
+                    
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
                         </div>
-
-                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                            <ul class="nav navbar-nav navbar-right">
-                                <li><a href="#">Page</a></li>
-                                <li><a href="#">Page</a></li>
-                                <li><a href="#">Page</a></li>
-                                <li><a href="#">Page</a></li>
-                            </ul>
+                        <div class="modal-body">
+                        ...
+                        </div>
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
                         </div>
                     </div>
-                </nav>
+                    </div>
+                </div>
+                <p></p>
+                <!-- Aktivitas Pembayaran -->
+                <div class="card">
+                    <div class="card-header" style="text-align: center">
+                        <i class="fa fa-calendar-plus-o"></i> Aktivitas Pembayaran Terbaru</div>
+                    <div class="list-group list-group-flush small">
+                        <a class="list-group-item list-group-item-action" href="#">
+                        <div class="media">
+                            <div class="media-body">
+                            <strong>SPP Juni 13</strong>
+                            <strong>Budi 5A</strong>.
+                            <div class="text-muted smaller">Rp. 300.000</div>
+                            </div>
+                        </div>
+                        </a>
+                        <a class="list-group-item list-group-item-action" href="#">
+                        <div class="media">
+                            <div class="media-body">
+                                <strong>SPP Juni 13</strong>
+                                <strong>Budi 5A</strong>.
+                                <div class="text-muted smaller">Rp. 300.000</div>
+                            </div>
+                        </div>
+                        </a>
+                        <a class="list-group-item list-group-item-action" href="#">
+                        <div class="media">
+                            <div class="media-body">
+                                <strong>SPP Juni 13</strong>
+                                <strong>Budi 5A</strong>.
+                                <div class="text-muted smaller">Rp. 300.000</div>
+                            </div>
+                        </div>
+                        </a>
+                        <a class="list-group-item list-group-item-action" href="#">
+                        <div class="media">
+                            <div class="media-body">
+                                <strong>SPP Juni 13</strong>
+                                <strong>Budi 5A</strong>.
+                                <div class="text-muted smaller">Rp. 300.000</div>
+                            </div>
+                        </div>
+                        </a>
+                        <a class="list-group-item list-group-item-action" href="#" style="text-align: center">Data Lainya...</a>
+                    </div>
+                </div>
 
-                <h2>Collapsible Sidebar Using Bootstrap 3</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-                <div class="line"></div>
-
-                <h2>Lorem Ipsum Dolor</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-                <div class="line"></div>
-
-                <h2>Lorem Ipsum Dolor</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-                <div class="line"></div>
-
-                <h3>Lorem Ipsum Dolor</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p></p>
+                <!-- Modal Print -->
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg"><em class="fa fa-print"></em> Cetak Laporan Keuangan</button>
+                <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                    
+                            <div class="modal-header">
+                            <h4 class="modal-title" id="myLargeModalLabel">Large modal</h4>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">×</span>
+                            </button>
+                            </div>
+                            <div class="modal-body">
+                            ...
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card" style="background-color: rgba(131, 141, 141, 0.664)">
+                <div class="card">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Cari siswa" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                            <span class="input-group-addon fa fa-search"></span>
+                        </div>
+                </div>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-danger btn-block mt-3" data-toggle="modal" data-target="#exampleModal">
+                        Pembayaran Keuangan <em class="fa fa-money"></em>
+                </button>
+                    
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        </div>
+                        <div class="modal-body">
+                        ...
+                        </div>
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <p></p>
+                <div class="card">
+                    <div class="card-header">
+                        <i class="fa fa-calendar-minus-o" style="text-align: center"></i> Daftar Kekurangan Pembayaran</div>
+                    <div class="list-group list-group-flush small">
+                        <a class="list-group-item list-group-item-action" href="#">
+                        <div class="media">
+                                <div class="media-body">
+                                        
+                                        <strong>Budi 5A</strong>
+                                        <strong>SPP Telat 13 Bulan</strong>
+                                        <div class="text-muted smaller">Rp. 1.300.000</div>
+                                    </div>
+                        </div>
+                        </a>
+                        <a class="list-group-item list-group-item-action" href="#">
+                        <div class="media">
+                                <div class="media-body">
+                                        
+                                        <strong>Budi 5A</strong>
+                                        <strong>SPP Telat 13 Bulan</strong>
+                                        <div class="text-muted smaller">Rp. 1.300.000</div>
+                                    </div>
+                        </div>
+                        </a>
+                        <a class="list-group-item list-group-item-action" href="#">
+                        <div class="media">
+                                <div class="media-body">
+                                        
+                                        <strong>Budi 5A</strong>
+                                        <strong>SPP Telat 13 Bulan</strong>
+                                        <div class="text-muted smaller">Rp. 1.300.000</div>
+                                    </div>
+                        </div>
+                        </a>
+                        <a class="list-group-item list-group-item-action" href="#">
+                        <div class="media">
+                                <div class="media-body">
+                                        
+                                        <strong>Budi 5A</strong>
+                                        <strong>SPP Telat 13 Bulan</strong>
+                                        <div class="text-muted smaller">Rp. 1.300.000</div>
+                                    </div>
+                        </div>
+                        </a>
+                        <a class="list-group-item list-group-item-action" href="#" style="text-align: center">Data Lainnya ...</a>
+                    </div>
+                </div>
             </div>
         </div>
+    </div>
     <script src="js/jquery.min.js"></script>
     <script src="js/tether.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
