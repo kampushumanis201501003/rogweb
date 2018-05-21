@@ -1,11 +1,11 @@
 html,body{
   height: 100%;
 }
-body{
+.gambar{
   width: 100%;
-  position: fixed;
+  position: absolute;
   background-size: cover;
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   background-image: url("../img/background.jpg");
 }
 .whitecolor{
