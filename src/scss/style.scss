@@ -1,7 +1,3 @@
-$shadow2 : 0 3px 6px rgba(0,0,0,0.255), 0 3px 6px rgba(0,0,0,0.255);
-html,body{
-  height: 100%;
-}
 body{
   width: 100%;
   position: fixed;
@@ -11,18 +7,6 @@ body{
 }
 .whitecolor{
   color: rgb(255, 255, 255);
-}
-.newsbox{
-  background-color: rgba(242,242,242,0.2)
-}
-.box {
-  width: 100%;
-  margin: auto;
-  padding: 10px;
-  max-width: 400px;
-  border-radius: 2px;
-  box-shadow: $shadow2;
-  background-color: rgba(242,242,242,0.2);
 }
 .img-circle {
   width: 150px;
